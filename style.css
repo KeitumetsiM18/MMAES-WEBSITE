@@ -1,0 +1,1019 @@
+/* ========================================
+   MMAES WEBSITE - MAIN STYLES
+   ======================================== */
+   html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1d2b3a;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e9ed;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-main {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1;
+    color: #1d2b3a;
+}
+
+.logo-name {
+    padding-left: 12px;
+    border-left: 1px solid #d6dde2;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #66717c;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #1d2b3a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar nav a:hover {
+    color: #526d82;
+}
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    min-height: calc(100vh - 85px);
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(135deg, #f7f9fb 0%, #ffffff 60%, #eef3f6 100%);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+    font-size: clamp(45px, 6vw, 78px);
+    line-height: 1.05;
+    color: #1d2b3a;
+}
+
+.hero h1 span {
+    display: block;
+    color: #526d82;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #66717c;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1d2b3a;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #526d82;
+}
+
+.btn-secondary {
+    border: 1px solid #1d2b3a;
+    color: #1d2b3a;
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #1d2b3a;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   HERO VISUAL CARDS
+======================================== */
+
+.hero-visual {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hero-card {
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e1e7eb;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(29, 43, 58, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(29, 43, 58, 0.1);
+}
+
+.hero-card span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.hero-card h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #1d2b3a;
+}
+
+.hero-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #66717c;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+======================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .logo small {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+}
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
+.about {
+    padding: 100px 7%;
+    background-color: #ffffff;
+}
+
+.about-heading {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.section-label {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.about-heading h2 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    color: #1d2b3a;
+}
+
+.about-heading h2 span {
+    color: #526d82;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    margin-bottom: 22px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66717c;
+}
+
+.about-highlight {
+    padding: 40px;
+    background-color: #f4f7f9;
+    border-left: 4px solid #526d82;
+}
+
+.highlight-number {
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.about-highlight h3 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 1.3;
+    color: #1d2b3a;
+}
+
+.about-highlight p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #66717c;
+}
+
+
+/* ========================================
+   ABOUT - MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .about {
+        padding: 70px 5%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+/* ========================================
+   SERVICES SECTION
+======================================== */
+
+.services {
+    padding: 110px 7%;
+    background-color: #f7f9fb;
+}
+
+.services-heading {
+    max-width: 800px;
+    margin-bottom: 65px;
+}
+
+.services-heading h2 {
+    margin-bottom: 22px;
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    color: #1d2b3a;
+}
+
+.services-heading h2 span {
+    color: #526d82;
+}
+
+.services-heading > p:last-child {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66717c;
+}
+
+
+/* ========================================
+   SERVICE CARDS
+======================================== */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    position: relative;
+    min-height: 330px;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #e1e7eb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #526d82;
+    box-shadow: 0 20px 40px rgba(29, 43, 58, 0.09);
+}
+
+.service-number {
+    margin-bottom: 35px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+    line-height: 1.3;
+    color: #1d2b3a;
+}
+
+.service-card p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #66717c;
+}
+
+.service-card a {
+    margin-top: auto;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    color: #1d2b3a;
+    transition: color 0.3s ease;
+}
+
+.service-card a:hover {
+    color: #526d82;
+}
+
+
+/* ========================================
+   SERVICES - TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   SERVICES - MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .services {
+        padding: 75px 5%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+
+}
+/* ========================================
+   SPECIALIST FIELDS
+======================================== */
+
+.specialist-fields {
+    padding: 110px 7%;
+    background-color: #1d2b3a;
+    color: #ffffff;
+}
+
+.specialist-heading {
+    max-width: 800px;
+    margin-bottom: 65px;
+}
+
+.specialist-heading .section-label {
+    color: #aebdca;
+}
+
+.specialist-heading h2 {
+    margin-bottom: 22px;
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    color: #ffffff;
+}
+
+.specialist-heading h2 span {
+    color: #aebdca;
+}
+
+.specialist-heading > p:last-child {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #c7d0d7;
+}
+
+
+/* ========================================
+   SPECIALIST FIELD ITEMS
+======================================== */
+
+.specialist-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #536372;
+}
+
+.specialist-item {
+    min-height: 130px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #536372;
+    transition: background-color 0.3s ease;
+}
+
+.specialist-item:nth-child(odd) {
+    border-right: 1px solid #536372;
+}
+
+.specialist-item:hover {
+    background-color: #263746;
+}
+
+.specialist-item span {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #aebdca;
+}
+
+.specialist-item h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   SPECIALIST FIELDS - MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .specialist-fields {
+        padding: 75px 5%;
+    }
+
+    .specialist-list {
+        grid-template-columns: 1fr;
+    }
+
+    .specialist-item:nth-child(odd) {
+        border-right: none;
+    }
+
+    .specialist-item h3 {
+        font-size: 21px;
+    }
+
+}
+/* ========================================
+   CALL TO ACTION
+======================================== */
+
+.cta {
+    padding: 110px 7%;
+    background-color: #eef3f6;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.cta .section-label {
+    margin-bottom: 20px;
+}
+
+.cta h2 {
+    margin-bottom: 25px;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.05;
+    color: #1d2b3a;
+}
+
+.cta h2 span {
+    color: #526d82;
+}
+
+.cta p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #66717c;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 30px;
+    background-color: #1d2b3a;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #526d82;
+    transform: translateY(-2px);
+}
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+.contact {
+    padding: 110px 7%;
+    background-color: #ffffff;
+}
+
+.contact-heading {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.contact-heading h2 {
+    margin-bottom: 22px;
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.1;
+    color: #1d2b3a;
+}
+
+.contact-heading h2 span {
+    color: #526d82;
+}
+
+.contact-heading > p:last-child {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66717c;
+}
+
+
+/* ========================================
+   CONTACT CARDS
+======================================== */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 35px;
+    background-color: #f7f9fb;
+    border: 1px solid #e1e7eb;
+    border-radius: 8px;
+}
+
+.contact-icon {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #1d2b3a;
+}
+
+.contact-card p {
+    font-size: 15px;
+    color: #66717c;
+}
+
+
+/* ========================================
+   AUDIENCE
+======================================== */
+
+.audience {
+    margin-top: 80px;
+    padding-top: 50px;
+    border-top: 1px solid #e1e7eb;
+}
+
+.audience-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.audience-list span {
+    padding: 12px 18px;
+    border: 1px solid #d6dde2;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #52606d;
+}
+
+
+/* ========================================
+   CONTACT - MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .contact {
+        padding: 75px 5%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    padding: 70px 7% 25px;
+    background-color: #17232e;
+    color: #ffffff;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 70px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.footer-brand > p {
+    max-width: 350px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c7d0d7;
+}
+
+.footer-brand > span {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #aebdca;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer a {
+    width: fit-content;
+    text-decoration: none;
+    font-size: 14px;
+    color: #aebdca;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #aebdca;
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    border-top: 1px solid #40505d;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #8999a6;
+}
+
+
+/* ========================================
+   FOOTER - MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .footer {
+        padding: 60px 5% 25px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
+.contact-card a {
+    color: #66717c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #526d82;
+}
+/* ========================================
+   WHY MMAES
+======================================== */
+
+.why-mmaes {
+    padding: 110px 7%;
+    background-color: #ffffff;
+}
+
+.why-heading {
+    max-width: 800px;
+    margin-bottom: 65px;
+}
+
+.why-heading h2 {
+    margin-bottom: 22px;
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    color: #1d2b3a;
+}
+
+.why-heading h2 span {
+    color: #526d82;
+}
+
+.why-heading > p:last-child {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66717c;
+}
+
+
+/* ========================================
+   WHY MMAES CARDS
+======================================== */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    padding: 35px;
+    background-color: #f7f9fb;
+    border: 1px solid #e1e7eb;
+    border-radius: 8px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(29, 43, 58, 0.08);
+}
+
+.why-number {
+    margin-bottom: 35px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #526d82;
+}
+
+.why-card h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+    color: #1d2b3a;
+}
+
+.why-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #66717c;
+}
+
+
+/* ========================================
+   WHY MMAES - MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .why-mmaes {
+        padding: 75px 5%;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ========================================
+   MOBILE NAVIGATION FIX
+======================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 16px 5%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-main {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+    .navbar nav {
+    gap: 9px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.navbar nav a {
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+}
+/* ========================================
+   ANCHOR SCROLL OFFSET
+======================================== */
+
+section {
+    scroll-margin-top: 90px;
+}
+/* ========================================
+   MOBILE LINK TARGETS
+======================================== */
+
+@media (max-width: 700px) {
+
+    .contact-card a,
+    .footer a,
+    .cta-button,
+    .service-card a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+}
+/* ========================================
+   KEYBOARD ACCESSIBILITY
+======================================== */
+
+a:focus-visible {
+    outline: 3px solid #526d82;
+    outline-offset: 4px;
+}
