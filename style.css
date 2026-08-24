@@ -1509,3 +1509,114 @@ a:focus-visible {
 .about-highlight p {
     color: #c7d7df;
 }
+/* ========================================
+   MMAES — WHY MMAES WOW DESIGN
+======================================== */
+
+.why-mmaes {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(74, 163, 199, 0.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef5f8 0%,
+            #ffffff 55%,
+            #f7f2e5 100%
+        );
+}
+
+.why-mmaes::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(31, 111, 139, 0.14);
+    border-radius: 50%;
+    left: -190px;
+    top: -180px;
+}
+
+.why-mmaes::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(214, 166, 58, 0.18);
+    border-radius: 50%;
+    right: -140px;
+    bottom: -140px;
+}
+
+.why-heading,
+.why-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.why-heading .section-label {
+    color: #1f6f8b;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.why-heading h2 {
+    color: #142b3d;
+}
+
+.why-heading h2 span {
+    color: #1f6f8b;
+}
+
+.why-heading p {
+    color: #526d82;
+}
+
+.why-card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(31, 111, 139, 0.12);
+    border-top: 4px solid #d6a63a;
+    box-shadow:
+        0 12px 35px rgba(20, 43, 61, 0.07);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-top-color 0.3s ease;
+}
+
+.why-card::after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    right: -55px;
+    bottom: -55px;
+    background: rgba(31, 111, 139, 0.06);
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    border-top-color: #1f6f8b;
+    box-shadow:
+        0 22px 45px rgba(20, 43, 61, 0.13);
+}
+
+.why-number {
+    color: #d6a63a;
+    font-weight: 800;
+}
+
+.why-card h3 {
+    color: #142b3d;
+}
+
+.why-card p {
+    color: #526d82;
+}
