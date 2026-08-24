@@ -1930,3 +1930,111 @@ a:focus-visible {
     }
 
 }
+/* ========================================
+   MMAES — CTA WOW DESIGN
+======================================== */
+
+.cta {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(214, 166, 58, 0.22),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f8f0d9 0%,
+            #eef5f8 55%,
+            #ffffff 100%
+        );
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(31, 111, 139, 0.14);
+    border-radius: 50%;
+    left: -200px;
+    top: -200px;
+}
+
+.cta::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(214, 166, 58, 0.20);
+    border-radius: 50%;
+    right: -125px;
+    bottom: -125px;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta .section-label {
+    color: #1f6f8b;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.cta h2 {
+    color: #142b3d;
+}
+
+.cta h2 span {
+    color: #1f6f8b;
+}
+
+.cta p {
+    color: #526d82;
+}
+
+.cta-button,
+.cta .btn-primary {
+    background:
+        linear-gradient(
+            135deg,
+            #142b3d,
+            #1f6f8b
+        );
+    color: #ffffff;
+    border: none;
+    box-shadow:
+        0 15px 35px rgba(20, 43, 61, 0.18);
+}
+
+.cta-button:hover,
+.cta .btn-primary:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #d6a63a,
+            #e5bd68
+        );
+    color: #142b3d;
+    transform: translateY(-3px);
+    box-shadow:
+        0 20px 40px rgba(214, 166, 58, 0.25);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .cta {
+        overflow: hidden;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+}
