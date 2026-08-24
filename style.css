@@ -1427,3 +1427,85 @@ a:focus-visible {
     }
 
 }
+/* ========================================
+   MMAES — ABOUT WOW DESIGN
+======================================== */
+
+.about {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(74, 163, 199, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #fffdf7 0%,
+            #f5f9fb 55%,
+            #eaf3f7 100%
+        );
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgba(214, 166, 58, 0.18);
+    border-radius: 50%;
+    right: -170px;
+    bottom: -170px;
+}
+
+.about-heading,
+.about-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-heading .section-label {
+    color: #1f6f8b;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.about-heading h2 {
+    color: #142b3d;
+}
+
+.about-heading h2 span {
+    color: #1f6f8b;
+}
+
+.about-text {
+    color: #526d82;
+}
+
+.about-highlight {
+    background:
+        linear-gradient(
+            135deg,
+            #172b3d,
+            #203f53
+        );
+    color: #ffffff;
+    border-left: 5px solid #d6a63a;
+    box-shadow:
+        0 18px 40px rgba(20, 43, 61, 0.12);
+}
+
+.about-highlight strong,
+.about-highlight h3 {
+    color: #ffffff;
+}
+
+.about-highlight span,
+.about-highlight .highlight-number {
+    color: #d6a63a;
+}
+
+.about-highlight p {
+    color: #c7d7df;
+}
