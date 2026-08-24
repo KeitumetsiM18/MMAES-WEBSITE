@@ -954,15 +954,25 @@ body {
 
 }
 /* ========================================
-   MOBILE NAVIGATION FIX
+   MMAES — MOBILE NAVIGATION FIX
 ======================================== */
 
 @media (max-width: 700px) {
 
     .navbar {
+        width: 100%;
+        max-width: 100%;
         padding: 16px 5%;
+        display: flex;
         align-items: center;
-        gap: 15px;
+        justify-content: space-between;
+        gap: 12px;
+        overflow: hidden;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        min-width: 0;
     }
 
     .logo-main {
@@ -975,23 +985,52 @@ body {
     }
 
     .navbar nav {
-    gap: 9px;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-}
+        min-width: 0;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 7px;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
 
-.navbar nav a {
-    font-size: 9px;
-    white-space: nowrap;
-}
-
+    .navbar nav a {
+        font-size: 9px;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+    }
 }
 /* ========================================
-   ANCHOR SCROLL OFFSET
+   MMAES — GLOBAL MOBILE WIDTH PROTECTION
 ======================================== */
 
-section {
-    scroll-margin-top: 90px;
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+section,
+header,
+footer,
+main {
+    max-width: 100%;
 }
 /* ========================================
    MOBILE LINK TARGETS
