@@ -1780,3 +1780,153 @@ a:focus-visible {
     }
 
 }
+/* ========================================
+   MMAES — SPECIALIST FIELDS WOW DESIGN
+======================================== */
+
+.specialist-fields {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(214, 166, 58, 0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 12% 85%,
+            rgba(74, 163, 199, 0.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1724 0%,
+            #142b3d 50%,
+            #0d1c2a 100%
+        );
+    color: #ffffff;
+}
+
+.specialist-fields::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(214, 166, 58, 0.14);
+    border-radius: 50%;
+    right: -250px;
+    top: -250px;
+}
+
+.specialist-fields::after {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 1px solid rgba(74, 163, 199, 0.13);
+    border-radius: 50%;
+    left: -170px;
+    bottom: -170px;
+}
+
+.specialist-heading,
+.specialist-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.specialist-heading .section-label {
+    color: #d6a63a;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.specialist-heading h2 {
+    color: #ffffff;
+}
+
+.specialist-heading h2 span {
+    color: #78bfd9;
+}
+
+.specialist-heading p {
+    color: #c1d2dc;
+}
+
+
+/* SPECIALIST ITEMS */
+
+.specialist-item {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(143, 196, 213, 0.20);
+    border-left: 3px solid #d6a63a;
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.specialist-item::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    right: -70px;
+    bottom: -70px;
+    background: rgba(74, 163, 199, 0.08);
+}
+
+.specialist-item:hover {
+    transform: translateY(-7px);
+    background: rgba(255, 255, 255, 0.085);
+    border-left-color: #78bfd9;
+}
+
+.specialist-item span {
+    color: #d6a63a;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.specialist-item h3 {
+    color: #ffffff;
+}
+
+.specialist-item p {
+    color: #b9ccd6;
+    line-height: 1.7;
+}
+
+
+/* SPECIALIST TAGS */
+
+.specialist-fields .audience-list span,
+.specialist-fields .tag {
+    border: 1px solid rgba(143, 196, 213, 0.35);
+    background: rgba(255, 255, 255, 0.045);
+    color: #cde1ea;
+}
+
+.specialist-fields .audience-list span:hover,
+.specialist-fields .tag:hover {
+    border-color: #d6a63a;
+    color: #d6a63a;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .specialist-fields {
+        overflow: hidden;
+    }
+
+    .specialist-item {
+        width: 100%;
+    }
+
+}
