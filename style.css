@@ -1620,3 +1620,163 @@ a:focus-visible {
 .why-card p {
     color: #526d82;
 }
+/* ========================================
+   MMAES — SERVICES WOW DESIGN
+======================================== */
+
+.services {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 88% 15%,
+            rgba(214, 166, 58, 0.15),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fbfc 0%,
+            #eef5f8 55%,
+            #ffffff 100%
+        );
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(31, 111, 139, 0.12);
+    border-radius: 50%;
+    right: -210px;
+    top: -210px;
+}
+
+.services-heading,
+.services-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.services-heading .section-label {
+    color: #1f6f8b;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.services-heading h2 {
+    color: #142b3d;
+}
+
+.services-heading h2 span {
+    color: #1f6f8b;
+}
+
+.services-heading p {
+    color: #526d82;
+}
+
+
+/* SERVICE CARDS */
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(31, 111, 139, 0.12);
+    border-top: 4px solid #1f6f8b;
+    box-shadow:
+        0 12px 35px rgba(20, 43, 61, 0.07);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    right: -65px;
+    top: -65px;
+    background: rgba(214, 166, 58, 0.08);
+    transition: transform 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-9px);
+    border-top-color: #d6a63a;
+    box-shadow:
+        0 25px 50px rgba(20, 43, 61, 0.13);
+}
+
+.service-card:hover::before {
+    transform: scale(1.35);
+}
+
+.service-number {
+    color: #d6a63a;
+    font-weight: 800;
+}
+
+.service-card h3 {
+    color: #142b3d;
+}
+
+.service-card p {
+    color: #526d82;
+    line-height: 1.75;
+}
+
+.service-card a {
+    color: #1f6f8b;
+    font-weight: 700;
+}
+
+.service-card a:hover {
+    color: #d6a63a;
+}
+
+
+/* SERVICE BUTTONS */
+
+.services .btn-primary {
+    background:
+        linear-gradient(
+            135deg,
+            #142b3d,
+            #1f6f8b
+        );
+    color: #ffffff;
+    border: none;
+    box-shadow:
+        0 12px 30px rgba(20, 43, 61, 0.18);
+}
+
+.services .btn-primary:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #d6a63a,
+            #e5bd68
+        );
+    color: #142b3d;
+    transform: translateY(-3px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .services {
+        overflow: hidden;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+}
