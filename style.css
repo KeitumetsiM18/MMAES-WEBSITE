@@ -1017,3 +1017,256 @@ a:focus-visible {
     outline: 3px solid #526d82;
     outline-offset: 4px;
 }
+/* ========================================
+   MMAES — FOUNDER WOW DESIGN
+======================================== */
+
+.founder {
+    position: relative;
+    padding: 110px 8%;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 12% 25%,
+            rgba(45, 126, 166, 0.25),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 88% 80%,
+            rgba(214, 166, 58, 0.16),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #101c2a 0%,
+            #172b3d 50%,
+            #0d1925 100%
+        );
+    color: #ffffff;
+}
+
+.founder::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(214, 166, 58, 0.22);
+    border-radius: 50%;
+    top: -180px;
+    right: -130px;
+}
+
+.founder::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(143, 196, 213, 0.18);
+    border-radius: 50%;
+    bottom: -140px;
+    left: -100px;
+}
+
+.founder-intro {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.founder-intro .section-label {
+    color: #d6a63a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.founder-intro h2 {
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.founder-intro h2 span {
+    display: block;
+    color: #d6a63a;
+}
+
+.founder-lead {
+    max-width: 680px;
+    margin: auto;
+    color: #c8d8e2;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.founder-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.founder-image {
+    display: flex;
+    justify-content: center;
+}
+
+.founder-image-frame {
+    position: relative;
+    width: min(100%, 470px);
+    padding: 12px;
+    border: 2px solid #d6a63a;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35),
+        0 0 45px rgba(214, 166, 58, 0.12);
+}
+
+.founder-image-frame::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-top: 4px solid #4aa3c7;
+    border-left: 4px solid #4aa3c7;
+    top: -12px;
+    left: -12px;
+}
+
+.founder-image-frame::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-right: 4px solid #d6a63a;
+    border-bottom: 4px solid #d6a63a;
+    bottom: -12px;
+    right: -12px;
+}
+
+.founder-image-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.founder-bio {
+    min-width: 0;
+}
+
+.founder-role {
+    color: #78bfd9;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.founder-bio h3 {
+    color: #ffffff;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    margin-bottom: 28px;
+}
+
+.founder-bio > p:not(.founder-role) {
+    color: #d4e0e7;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.founder-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 35px;
+}
+
+.founder-highlight {
+    padding: 24px 18px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(143, 196, 213, 0.25);
+    border-top: 3px solid #d6a63a;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.founder-highlight:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.founder-highlight span {
+    display: block;
+    color: #d6a63a;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.founder-highlight strong {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.founder-highlight p {
+    color: #aec1cc;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   FOUNDER — MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .founder {
+        padding: 75px 6%;
+    }
+
+    .founder-intro {
+        margin-bottom: 50px;
+    }
+
+    .founder-intro h2 {
+        font-size: 38px;
+    }
+
+    .founder-content {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        width: 100%;
+    }
+
+    .founder-image-frame {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .founder-bio h3 {
+        font-size: 34px;
+    }
+
+    .founder-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-highlight {
+        width: 100%;
+    }
+}
